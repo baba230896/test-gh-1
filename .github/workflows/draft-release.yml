@@ -5,6 +5,7 @@ on:
     types:
       - created
       - edited
+  push:
 
 jobs:
   draft_release:

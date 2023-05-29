@@ -20,14 +20,14 @@ jobs:
         with:
           go-version: 1.16
 
-      - name: Cache Dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+      # - name: Cache Dependencies
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: ~/go/pkg/mod
+      #     key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
 
-      - name: Build Go Application
-        run: go build -o myapp.go
+      # - name: Build Go Application
+      #   run: go build -o myapp.go
 
       # - name: Set up AWS CLI
       #   uses: aws-actions/configure-aws-credentials@v1

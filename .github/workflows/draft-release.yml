@@ -27,7 +27,7 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
 
       - name: Build Go Application
-        run: go build -o myapp
+        run: go build -o myapp.go
 
       # - name: Set up AWS CLI
       #   uses: aws-actions/configure-aws-credentials@v1

@@ -3,8 +3,7 @@ name: Draft release
 on:
   release:
     types:
-      - created
-      - edited
+      - published
 
 jobs:
   draft_release:
